@@ -6,9 +6,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	hcl "github.com/hashicorp/hcl/v2"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform"
-	client "github.com/terraform-linters/tflint-plugin-sdk/tflint"
-	tfplugin "github.com/terraform-linters/tflint-plugin-sdk/tflint/client"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform"
+	client "github.com/markliederbach/tflint-plugin-sdk/tflint"
+	tfplugin "github.com/markliederbach/tflint-plugin-sdk/tflint/client"
 	"github.com/terraform-linters/tflint/tflint"
 	"github.com/zclconf/go-cty/cty"
 )
@@ -247,7 +247,8 @@ variable "instance_type" {
 			Start:    hcl.Pos{Line: 1, Column: 1},
 			End:      hcl.Pos{Line: 1, Column: 1},
 		},
-		Ret: "", // string value
+		Ret:      "", // string value
+		WantType: cty.String,
 	}
 	var resp tfplugin.EvalExprResponse
 
@@ -280,7 +281,8 @@ func Test_EvalExpr_errors(t *testing.T) {
 			Start:    hcl.Pos{Line: 1, Column: 1},
 			End:      hcl.Pos{Line: 1, Column: 1},
 		},
-		Ret: "", // string value
+		Ret:      "", // string value
+		WantType: cty.String,
 	}
 	var resp tfplugin.EvalExprResponse
 

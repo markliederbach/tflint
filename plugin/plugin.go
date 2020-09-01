@@ -2,7 +2,7 @@ package plugin
 
 import (
 	plugin "github.com/hashicorp/go-plugin"
-	tfplugin "github.com/terraform-linters/tflint-plugin-sdk/plugin"
+	tfplugin "github.com/markliederbach/tflint-plugin-sdk/plugin"
 )
 
 // PluginRoot is the root directory of the plugins

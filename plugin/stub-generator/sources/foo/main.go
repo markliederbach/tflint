@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/terraform-linters/tflint-plugin-sdk/plugin"
-	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
+	"github.com/markliederbach/tflint-plugin-sdk/tflint"
+	"github.com/markliederbach/tflint-plugin-sdk/plugin"
 )
 
 func main() {

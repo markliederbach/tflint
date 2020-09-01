@@ -11,7 +11,7 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	hcl "github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	tfplugin "github.com/terraform-linters/tflint-plugin-sdk/tflint"
+	tfplugin "github.com/markliederbach/tflint-plugin-sdk/tflint"
 	"github.com/terraform-linters/tflint/client"
 )
 
