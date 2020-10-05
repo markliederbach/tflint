@@ -36,7 +36,7 @@ func (r *TerraformRequiredProvidersRule) Link() string {
 	return tflint.ReferenceLink(r.Name())
 }
 
-// Check checks whether variables have descriptions
+//Check Checks whether provider required version is set
 func (r *TerraformRequiredProvidersRule) Check(runner *tflint.Runner) error {
 	if !runner.TFConfig.Path.IsRoot() {
 		// This rule does not evaluate child modules.
@@ -75,6 +75,11 @@ func (r *TerraformRequiredProvidersRule) Check(runner *tflint.Runner) error {
 	}
 
 	for name, decl := range providers {
+		// builtin
+		if name == "terraform" {
+			continue
+		}
+
 		if _, ok := module.ProviderRequirements.RequiredProviders[name]; !ok {
 			runner.EmitIssue(r, fmt.Sprintf(`Missing version constraint for provider "%s" in "required_providers"`, name), decl)
 		}

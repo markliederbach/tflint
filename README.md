@@ -30,7 +30,7 @@ TFLint finds such errors in advance:
 You can download the binary built for your architecture from [the latest release](https://github.com/terraform-linters/tflint/releases/latest). The following is an example of installation on macOS:
 
 ```console
-$ curl --location https://github.com/terraform-linters/tflint/releases/download/v0.19.1/tflint_darwin_amd64.zip --output tflint_darwin_amd64.zip
+$ curl --location https://github.com/terraform-linters/tflint/releases/download/v0.20.2/tflint_darwin_amd64.zip --output tflint_darwin_amd64.zip
 $ unzip tflint_darwin_amd64.zip
 Archive:  tflint_darwin_amd64.zip
   inflating: tflint
@@ -79,7 +79,7 @@ TFLint supports multiple providers via plugins. The following is the Major Cloud
 |---|---|---|
 |[AWS](https://github.com/terraform-linters/tflint-ruleset-aws)|Available|Inspections for AWS resources are now built into TFLint. So, it is not necessary to install the plugin separately. In the future, these will be cut out to the plugin, but all are in progress.|
 |[Azure](https://github.com/terraform-linters/tflint-ruleset-azurerm)|Experimental|Experimental support has been started. You can inspect Azure resources by installing the plugin.|
-|[Google Cloud Platform](https://github.com/terraform-linters/tflint-ruleset-google)|Work in Progress|Everything is working and not available.|
+|[Google Cloud Platform](https://github.com/terraform-linters/tflint-ruleset-google)|Experimental|Experimental support has been started. You can inspect GCP resources by installing the plugin.|
 
 Please see the [documentation](docs/guides/extend.md) about the plugin system.
 
