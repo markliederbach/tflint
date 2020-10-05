@@ -3,10 +3,10 @@ package plugin
 import (
 	hcl "github.com/hashicorp/hcl/v2"
 	tfconfigs "github.com/hashicorp/terraform/configs"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/addrs"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/configs"
-	"github.com/terraform-linters/tflint-plugin-sdk/terraform/experiments"
-	tfplugin "github.com/terraform-linters/tflint-plugin-sdk/tflint/client"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/addrs"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/configs"
+	"github.com/markliederbach/tflint-plugin-sdk/terraform/experiments"
+	tfplugin "github.com/markliederbach/tflint-plugin-sdk/tflint/client"
 	"github.com/terraform-linters/tflint/tflint"
 )
 

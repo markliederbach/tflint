@@ -16,13 +16,13 @@ require (
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.0.3
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/jstemmer/go-junit-report v0.9.1
+	github.com/markliederbach/tflint-plugin-sdk v0.4.1-0.20201005181805-13da763b5575
 	github.com/mattn/go-colorable v0.1.7
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/serenize/snaker v0.0.0-20171204205717-a683aaf2d516
 	github.com/sourcegraph/go-lsp v0.0.0-20181119182933-0c7d621186c1
 	github.com/sourcegraph/jsonrpc2 v0.0.0-20190106185902-35a74f039c6a
 	github.com/spf13/afero v1.4.0
-	github.com/terraform-linters/tflint-plugin-sdk v0.5.0
 	github.com/terraform-providers/terraform-provider-aws v1.60.1-0.20200911000452-cd5001256b67
 	github.com/zclconf/go-cty v1.6.1
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b
