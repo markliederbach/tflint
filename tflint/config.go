@@ -9,8 +9,8 @@ import (
 	hcl "github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/gohcl"
 	"github.com/hashicorp/hcl/v2/hclparse"
-	tfplugin "github.com/markliederbach/tflint-plugin-sdk/tflint"
 	homedir "github.com/mitchellh/go-homedir"
+	tfplugin "github.com/terraform-linters/tflint-plugin-sdk/tflint"
 	"github.com/terraform-linters/tflint/client"
 )
 

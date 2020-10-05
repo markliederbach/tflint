@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	plugin "github.com/hashicorp/go-plugin"
-	tfplugin "github.com/markliederbach/tflint-plugin-sdk/plugin"
 	"github.com/mitchellh/go-homedir"
+	tfplugin "github.com/terraform-linters/tflint-plugin-sdk/plugin"
 	"github.com/terraform-linters/tflint/tflint"
 )
 

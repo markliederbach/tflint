@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	hcl "github.com/hashicorp/hcl/v2"
-	"github.com/markliederbach/tflint-plugin-sdk/plugin"
-	"github.com/markliederbach/tflint-plugin-sdk/tflint"
+	"github.com/terraform-linters/tflint-plugin-sdk/plugin"
+	"github.com/terraform-linters/tflint-plugin-sdk/tflint"
 )
 
 func main() {

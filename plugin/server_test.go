@@ -6,9 +6,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	hcl "github.com/hashicorp/hcl/v2"
-	"github.com/markliederbach/tflint-plugin-sdk/terraform"
-	client "github.com/markliederbach/tflint-plugin-sdk/tflint"
-	tfplugin "github.com/markliederbach/tflint-plugin-sdk/tflint/client"
+	"github.com/terraform-linters/tflint-plugin-sdk/terraform"
+	client "github.com/terraform-linters/tflint-plugin-sdk/tflint"
+	tfplugin "github.com/terraform-linters/tflint-plugin-sdk/tflint/client"
 	"github.com/terraform-linters/tflint/tflint"
 	"github.com/zclconf/go-cty/cty"
 )
