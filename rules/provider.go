@@ -37,6 +37,7 @@ var manualDefaultRules = []Rule{
 	awsrules.NewAwsS3BucketNameRule(),
 	awsrules.NewAwsSpotFleetRequestInvalidExcessCapacityTerminationPolicyRule(),
 	awsrules.NewAwsResourceMissingTagsRule(),
+	awsrules.NewAwsResourceInvalidCerebroTagRule(), // Zendesk-forked rule
 	awsrules.NewAwsDynamoDBTableInvalidStreamViewTypeRule(),
 	terraformrules.NewTerraformDeprecatedIndexRule(),
 	terraformrules.NewTerraformDeprecatedInterpolationRule(),
