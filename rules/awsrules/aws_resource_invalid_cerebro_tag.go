@@ -153,17 +153,7 @@ func getToken() (string, error) {
 	if cerebroToken, ok := os.LookupEnv("CEREBRO_TOKEN"); ok {
 		return cerebroToken, nil
 	}
-
-	log.Printf("[DEBUG] CEREBRO_TOKEN not set, checking .cerebro-token file")
-
-	// Backup method is to look for a .cerebro-token in
-	// the current directory (I hate this)
-	cerebroToken, err := ioutil.ReadFile(".cerebro-token")
-	if err != nil {
-		return "", fmt.Errorf("Failed to read Cerebro token from .cerebro-token: %w", err)
-	}
-	return strings.TrimSpace(string(cerebroToken)), nil
-
+	return "", fmt.Errorf("Missing CEREBRO_TOKEN environment variable")
 }
 
 func (c *Cerebro) buildURL(endpoint Endpoint, page int) string {
