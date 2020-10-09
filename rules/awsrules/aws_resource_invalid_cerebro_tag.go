@@ -227,8 +227,6 @@ func (c *Cerebro) GetTeams() (map[string]Void, error) {
 			result[team.Permalink] = member
 		}
 	}
-
-	log.Printf("[DEBUG] Found %v valid Cerebro teams", len(result))
 	return result, nil
 }
 
@@ -388,6 +386,8 @@ func (r *AwsResourceInvalidCerebroTagRule) Check(runner *tflint.Runner) error {
 	if err := runner.DecodeRuleConfig(r.Name(), &config); err != nil {
 		return err
 	}
+
+	log.Printf("[DEBUG] Found %v valid Cerebro teams", len(r.Allowed.Teams))
 
 	// Iterate all resource types
 	for _, resourceType := range tags.Resources {
