@@ -613,7 +613,7 @@ func (r *AwsResourceInvalidCerebroTagRule) emitIssue(runner *tflint.Runner, tags
 	if len(issues) > 0 {
 		sort.Strings(issues)
 		joinedIssues := strings.Join(issues, ", ")
-		issue := fmt.Sprintf("The resource has invalid values for Cerebro: %s", joinedIssues)
+		issue := fmt.Sprintf("The resource has invalid values for Cerebro: %s. If the team tag value is invalid, make sure the team value is in Cerebro and the team does not have any child teams (i.e 'foundation' would be an invalid team).", joinedIssues)
 		runner.EmitIssue(r, issue, location)
 	}
 }
